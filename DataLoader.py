@@ -41,8 +41,8 @@ class SequentialLoader:
                 line = line.split()
                 self.labels[line[0]] = np.array([phone[i] for i in line[1:]])
                 self.label_cnt += len(self.labels[line[0]])
-        # load feature
-
+        # load feature (missing?)
+                
     def __len__(self):
         return len(self.labels)
 
